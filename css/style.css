@@ -17,4 +17,120 @@
     --color-peggiorverdedisempre: #a2d39b;
     --color-bg-bottom: #0061ff;
     --color-white: #f5f5f5;
+    --width-container: 1200px;
+    --width-hero: 1400px;
+}
+a{
+    text-decoration: none;
+    color: var(--color-bg-footer);
+}
+nav{
+    background-color: var(--color-white);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav > div > a,img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header{
+    background-color: var(--color-bg-hero);
+}
+.hero{
+    max-width: var(--width-hero);
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.hero > h1{
+    font-size: 90px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+}
+.hero-text{
+    width: 30%;
+    position: relative;
+}
+.hero-text > p{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.margin{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.btn{
+    appearance: none;
+    border: none;
+    background-color: var(--color-bg-bottom);
+    color: var(--color-white);
+    padding: 10px 15px;
+}
+.hero-img{
+    width: 70%;
+}
+.hero-img > img{
+    width: 100%;
+}
+#arrow{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+main{
+    background-color: var(--color-bg-main);
+}
+.main-container{
+    max-width: var(--width-container);
+    margin: 0 auto;
+}
+.business-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.business{
+    width: calc((100% / 3) - 40px);
+    border: 2px solid var(--color-white);
+    height: 800px;
+}
+.business-header{
+    width: 100%;
+    height: 5%;
+    border-bottom: 1px solid var(--color-white);
+    text-align: center;
+    line-height: 40px;
+}
+.business-header > span{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.inline{
+    display: inline;
+}
+.business-body{
+    width: 80%;
+    margin-left: 20px;
+}
+.business-footer{
+    width: 100%;
+}
+.business-footer-img > img{
+    width: 60%;
+}
+.business-footer-text{
+    width: 40%;
 }
