@@ -359,12 +359,12 @@ h2{
     width: 50%;
     height: 50%;
 }
-.small-box > svg{
+.small-box > img{
     width: 50%;
     height: 50%;
     object-fit: contain;
+    filter: invert(1);
     position: relative;
-    fill: var(--color-bg-main);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
