@@ -110,8 +110,9 @@ h2{
 .checkbox-container{
     padding: 40px 0;
 }
-#span2{
+.space2{
     margin-left: 80px;
+    display: inline-block;
 }
 .business-container{
     width: 100%;
