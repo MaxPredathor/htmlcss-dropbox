@@ -19,6 +19,8 @@
     --color-bg-bottom: #0061ff;
     --color-white: #f5f5f5;
     --color-borders: #e4e4e5;
+    --color-submenu: #f1ede7;
+    --color-submenu-hover: #e8e2d7;
     --width-container: 1000px;
     --width-hero: 1200px;
 }
@@ -34,16 +36,66 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    line-height: 80px;
+    font-size: 18px;
     font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
 }
-nav > div > a,img{
+.submenu-container{
+    position: relative;
+}
+.submenu-wrapper{
+    width: 400px;
+    position: absolute;
+    bottom: -285px;
+    right: -156px;
+    display: none;
+}
+.submenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-submenu);
+    color: var(--color-bg-footer);
+}
+.halfmenu{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    line-height: 1;
+}
+.halfmenu > ul{
+    list-style: none;
+}
+.halfmenu > ul > h5{
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.halfmenu > ul > li{
+    line-height: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+nav > div > img{
     padding-left: 10px;
     padding-right: 10px;
+}
+nav > div > a{
+    padding: 28px 10px;
+}
+nav > div > a:hover{
+    border-bottom: 2px solid var(--color-bg-footer);
+}
+.soluzioni:hover .submenu-wrapper{
+    display: block;
+}
+.halfmenu > ul > li:hover{
+    background-color: var(--color-submenu-hover);
 }
 /* HERO */
 header{
@@ -80,7 +132,7 @@ header{
     border: none;
     background-color: var(--color-bg-bottom);
     color: var(--color-white);
-    padding: 10px 15px;
+    padding: 10px 10px;
     cursor: pointer;
 }
 .hero-img{
@@ -243,6 +295,7 @@ h2{
 .business-body > ul > li{
     margin-bottom: 20px;
     font-size: 15px;
+    text-indent: -18px;
 }
 .business-body > ul > h5{
     font-size: 15px;
