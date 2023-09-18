@@ -19,9 +19,10 @@
     --color-bg-bottom: #0061ff;
     --color-white: #f5f5f5;
     --color-borders: #e4e4e5;
-    --width-container: 1200px;
-    --width-hero: 1400px;
+    --width-container: 1000px;
+    --width-hero: 1200px;
 }
+/* NAV */
 a{
     text-decoration: none;
     color: var(--color-bg-footer);
@@ -44,6 +45,7 @@ nav > div > a,img{
     padding-left: 10px;
     padding-right: 10px;
 }
+/* HERO */
 header{
     background-color: var(--color-bg-hero);
 }
@@ -96,6 +98,7 @@ header{
     bottom: 20px;
     left: 0px;
 }
+/* MAIN */
 main{
     background-color: var(--color-bg-main);
 }
@@ -123,7 +126,7 @@ h2{
 .business{
     width: calc((100% / 3) - 40px);
     border: 2px solid var(--color-borders);
-    height: 900px;
+    height: 1000px;
 }
 .business-bottom{
     width: 100%;
@@ -303,13 +306,13 @@ h2{
 }
 .card{
     width: calc((100% - 60px) / 3);
-    height: 600px;
+    height: 700px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 .card-img{
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
 .card-img > img{
     width: 100%;
@@ -318,7 +321,7 @@ h2{
 }
 .card-text{
     width: 80%;
-    height: 50%;
+    height: 60%;
     font-size: 16px;
     padding-left: 50px;
 }
@@ -333,7 +336,7 @@ h2{
     text-decoration: underline;
 }
 #big-section{
-    width: 100vw;
+    width: calc(100% - 10px);
     margin-top: 50px;
 }
 .square-container{
@@ -341,17 +344,52 @@ h2{
     display: flex;
 }
 .square{
-    width: calc(100vw / 3);
-    height: 638px;
+    width: calc(100% / 3);
+    height: 631px;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
 .rectangle{
-    width: 100%;
+    width: calc(100%);
     height: 300px;
     border: 1px solid black;
 }
 .small-box{
     width: 50%;
     height: 50%;
-    border: 1px solid red;
+}
+.small-box > svg{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    position: relative;
+    fill: var(--color-bg-main);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bg-greenish{
+    background-color: var(--color-peggiorverdedisempre);
+}
+.bg-bordeux{
+    background-color: var(--color-bordeux);
+}
+.bg-lightblue{
+    background-color: var(--color-lightblue);
+}
+.bg-hotred{
+    background-color: var(--color-red1);
+}
+.bg-red{
+    background-color: var(--color-redbello);
+}
+.bg-superlightblue{
+    background-color: var(--color-whoknows);
+}
+.bg-blue{
+    background-color: var(--color-bluastro);
+}
+.bg-yellow{
+    background-color: var(--color-giallognolo);
 }
