@@ -81,6 +81,7 @@ header{
     background-color: var(--color-bg-bottom);
     color: var(--color-white);
     padding: 10px 15px;
+    cursor: pointer;
 }
 .hero-img{
     width: 70%;
@@ -346,14 +347,8 @@ h2{
 .square{
     width: calc(100% / 3);
     height: 631px;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
-}
-.rectangle{
-    width: calc(100%);
-    height: 300px;
-    border: 1px solid black;
 }
 .small-box{
     width: 50%;
@@ -392,4 +387,50 @@ h2{
 }
 .bg-yellow{
     background-color: var(--color-giallognolo);
+}
+.bg-lightgrey{
+    background-color: var(--color-white);
+}
+.designit{
+    width: 100%;
+    height: 100px;
+}
+.square > div > img{
+    width: 250px;
+    height: 100px;
+    margin: 30px;
+}
+.square > p{
+    padding: 20px;
+}
+.space2{
+    width: 100px;
+    margin: 10px 0 10px 20px;
+}
+.rectangle{
+    width: calc(100%);
+    height: 300px;
+    background-color: var(--color-bg-hero);
+}
+.rectangle-wrapper{
+    width: var(--width-container);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rectangle-wrapper > h2{
+    color: var(--color-bordeux);
+    margin-top: 50px;
+}
+.rectangle-button{
+    width: 300px;
+}
+.rectangle-button > button{
+    background-color: var(--color-bg-main);
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 30px;
 }
