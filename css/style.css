@@ -93,7 +93,7 @@ nav > div > a{
 nav > div > a:hover{
     border-bottom: 2px solid var(--color-bg-footer);
 }
-.soluzioni:enabled .submenu-wrapper{
+.soluzioni:hover .submenu-wrapper{
     display: block;
 }
 .halfmenu > ul > li:hover{
@@ -578,9 +578,8 @@ details > p{
 summary > i{
     margin-left: 280px;
 }
-.summary-container:active summary > i{
+.summary-container:focus summary > i{
     rotate: 180deg;
-    color: red;
 }
 .summary-container:hover{
     background-color: var(--color-submenu-hover);
