@@ -154,9 +154,69 @@ header{
     bottom: 20px;
     left: 0px;
 }
+#header-prezzi{
+    background-color: var(--color-bg-main);
+}
+.small-hero{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
 /* MAIN */
 main{
     background-color: var(--color-bg-main);
+}
+#main-prezzi{
+    background-color: var(--color-borders);
+}
+.prezzi-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+.prezzi{
+    width: calc(100% / 3 - 40px);
+    background-color: var(--color-bg-main);
+    border-radius: 4px;
+}
+.prezzi-top{
+    padding: 10px;
+}
+.prezzi-bot > ul{
+    list-style: none;
+}
+.prezzi-bot > ul > li{
+    margin: 20px 10px 20px 20px;
+    font-size: 15px;
+    text-indent: -17px;
+}
+.prezzi-top > .btn{
+    margin: 60px 0;
+}
+.prezzi-top > h4,#xd{
+    margin: 15px 0;
+}
+.prezzi-bot > ul > li:before{
+    content: "\2714";
+    color: var(--color-bg-bottom);
+    font-size: 15px;
+    font-weight: bold;
+}
+.section-footer{
+    width: 80%;
+    margin: auto;
+    margin: 60px 0;
+}
+.section-footer > h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.section-footer > a{
+    font-size: 20px;
+    padding-top: 40px;
 }
 h2{
     font-size: 40px;
@@ -165,6 +225,7 @@ h2{
 .main-container{
     max-width: var(--width-container);
     margin: 0 auto;
+    margin-top: 100px;
 }
 .checkbox-container{
     padding: 40px 0;
@@ -182,7 +243,6 @@ h2{
 .business{
     width: calc((100% / 3) - 40px);
     border: 2px solid var(--color-borders);
-    height: 1000px;
 }
 .business-bottom{
     width: 100%;
@@ -372,7 +432,6 @@ h2{
 }
 .card{
     width: calc((100% - 60px) / 3);
-    height: 700px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -393,6 +452,7 @@ h2{
 }
 .card-text > h4{
     font-size: 25px;
+    margin-bottom: 15px;
 }
 .card-text > p{
     font-size: 18px;
