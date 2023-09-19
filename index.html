@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="img/images.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -96,9 +97,9 @@
                             per ottimizzare il flusso di lavoro esistente.</strong></p>
                     <button class="btn margin">Inizia la tua prova gratuita</button>
                     <p>Annulla in qualsiasi momento</p>
-                    <p>
+                    <a href="#professional">
                         <i id="arrow" class="fa-solid fa-arrow-down"></i>
-                    </p>
+                    </a>
                 </div>
                 <div class="hero-img">
                     <img src="img/jumbo.png" alt="Hero">
@@ -111,7 +112,7 @@
         <section class="main-container">
             <div>
                 <h2>Trova il piano business che fa per te</h2>
-                <div class="checkbox-container">
+                <div id="professional" class="checkbox-container">
                     <input type="radio" name="fatturazione" id="mensile" checked>
                     <label for="mensile">Fatturazione mensile</label>
                     <span class="space2"></span>
@@ -140,7 +141,7 @@
                             </div>
                         </div>
                         <div class="business-item-container">
-                            <div class="business-item">
+                            <div class="business-item folder-position">
                                 <i class="fa-solid fa-folder"></i>
                             </div>
                             <div class="business-items">
@@ -148,7 +149,7 @@
                             </div>
                         </div>
                         <div class="business-item-container">
-                            <div class="business-item item-position">
+                            <div class="business-item item-positions">
                                 <i class="fa-solid fa-share-nodes"></i>
                             </div>
                             <div class="business-items">
@@ -202,7 +203,7 @@
                                     sicurotutti i file del tuo team</p>
                             </div>
                         </div>
-                        <a class="btn prova">Prova gratis per 30 giorni</a>
+                        <a class="btn prova margin-fix">Prova gratis per 30 giorni</a>
                         <p>oppure <a class="business-link" href="">acquista ora</a></p>
                         <div class="space"></div>
                         <ul>
@@ -235,7 +236,7 @@
                             </div>
                         </div>
                         <div class="business-item-container">
-                            <div class="business-item folder-position">
+                            <div class="business-item folder-positions">
                                 <i class="fa-solid fa-folder"></i>
                             </div>
                             <div class="business-items">
@@ -251,7 +252,7 @@
                                     gestione su larga scala</p>
                             </div>
                         </div>
-                        <a class="btn prova">Contattaci</a>
+                        <a class="btn prova margin-fix2">Contattaci</a>
                         <p>oppure <a class="business-link" href="">acquista ora</a></p>
                         <div class="space"></div>
                         <ul>
@@ -378,17 +379,29 @@
         <section id="big-section">
             <div class="square-container">
                 <div class="square">
-                    <div class="small-box bg-greenish">
-                        <img src="img/designit.svg" alt="designitLogo">
+                    <div class="small-box">
+                        <div class="box-main bg-greenish">
+                            <img src="img/designit.svg" alt="designitLogo">
+                        </div>
+                        <div class="box-hidden bg-heavygreen"></div>
                     </div>
-                    <div class="small-box bg-bordeux">
-                        <img src="img/arizona_state_university.svg" alt="ASUlogo">
+                    <div class="small-box">
+                        <div class="box-main bg-bordeux">
+                            <img src="img/arizona_state_university.svg" alt="ASUlogo">
+                        </div>
+                        <div class="box-hidden bg-heavybordeux"></div>
                     </div>
-                    <div class="small-box bg-lightblue">
-                        <img src="img/university_of_florida.svg" alt="UFlogo">
+                    <div class="small-box">
+                        <div class="box-main bg-lightblue">
+                            <img src="img/university_of_florida.svg" alt="UFlogo">
+                        </div>
+                        <div class="box-hidden bg-notlightblueanymore"></div>
                     </div>
-                    <div class="small-box bg-hotred">
-                        <img src="img/topps.svg" alt="ToppsLogo">
+                    <div class="small-box">
+                        <div class="box-main bg-hotred">
+                            <img src="img/topps.svg" alt="ToppsLogo">
+                        </div>
+                        <div class="box-hidden bg-heavyhotred"></div>
                     </div>
                 </div>
                 <div class="square middlesquare bg-lightgrey">
@@ -400,20 +413,32 @@
                         soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox
                         Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto
                         Dropbox Paper".</p>
-                        <p>Morten Thomsen, Global IT Lead</p>
+                    <p>Morten Thomsen, Global IT Lead</p>
                 </div>
                 <div class="square">
-                    <div class="small-box bg-red">
-                        <img src="img/world_bicycle_relief.svg" alt="wbrLogo">
+                    <div class="small-box">
+                        <div class="box-main bg-red">
+                            <img src="img/world_bicycle_relief.svg" alt="wbrLogo">
+                        </div>
+                        <div class="box-hidden bg-heavyhotred"></div>
                     </div>
-                    <div class="small-box bg-superlightblue">
-                        <img src="img/hearst_corp.svg" alt="heartsLogo">
+                    <div class="small-box">
+                        <div class="box-main bg-superlightblue">
+                            <img src="img/hearst_corp.svg" alt="heartsLogo">
+                        </div>
+                        <div class="box-hidden bg-heavylightblue"></div>
                     </div>
-                    <div class="small-box bg-blue">
-                        <img src="img/lonely_planet.svg" alt="LPlogo">
+                    <div class="small-box">
+                        <div class="box-main bg-blue">
+                            <img src="img/lonely_planet.svg" alt="LPlogo">
+                        </div>
+                        <div class="box-hidden bg-superheavyblue"></div>
                     </div>
-                    <div class="small-box bg-yellow">
-                        <img src="img/clear_channel.svg" alt="ccLogo">
+                    <div class="small-box">
+                        <div class="box-main bg-yellow">
+                            <img src="img/clear_channel.svg" alt="ccLogo">
+                        </div>
+                        <div class="box-hidden bg-heavyyellow"></div>
                     </div>
                 </div>
             </div>
@@ -433,21 +458,28 @@
                 <div class="summary-container">
                     <form action="">
                         <details>
-                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</summary>
+                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
+                            </summary>
+                            <p>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                            <p>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                            <p>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
+                            <p>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</p>
                         </details>
                     </form>
                 </div>
                 <div class="summary-container">
                     <form action="">
                         <details>
-                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</summary>
+                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
+                            </summary>
                         </details>
                     </form>
                 </div>
                 <div class="summary-container extra">
                     <form action="">
                         <details>
-                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</summary>
+                            <summary>Qual'è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
+                            </summary>
                         </details>
                     </form>
                 </div>
@@ -521,4 +553,5 @@
         </div>
     </footer>
 </body>
+
 </html>
