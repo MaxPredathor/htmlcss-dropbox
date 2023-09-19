@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 :root {
     --color-bg-hero: #b8d1e5;
@@ -20,6 +21,7 @@
     --color-white: #f5f5f5;
     --color-borders: #e4e4e5;
     --color-submenu: #f1ede7;
+    --color-btn-hover: #004dcc;
     --color-submenu-hover: #e8e2d7;
     --width-container: 1000px;
     --width-hero: 1200px;
@@ -91,7 +93,7 @@ nav > div > a{
 nav > div > a:hover{
     border-bottom: 2px solid var(--color-bg-footer);
 }
-.soluzioni:hover .submenu-wrapper{
+.soluzioni:enabled .submenu-wrapper{
     display: block;
 }
 .halfmenu > ul > li:hover{
@@ -123,10 +125,6 @@ header{
     margin-bottom: 40px;
     font-size: 20px;
 }
-.margin{
-    margin-bottom: 40px;
-    font-size: 20px;
-}
 .btn{
     appearance: none;
     border: none;
@@ -134,6 +132,11 @@ header{
     color: var(--color-white);
     padding: 10px 10px;
     cursor: pointer;
+}
+.margin{
+    margin-bottom: 40px;
+    padding: 15px 20px;
+    font-size: 20px;
 }
 .hero-img{
     width: 70%;
@@ -253,7 +256,10 @@ h2{
     padding-left: 20px;
 }
 .margin-fix{
-    margin-top: 52px;
+    margin-top: 74px;
+}
+.margin-fix2{
+    margin-top: 30px;
 }
 .business-item-container{
     width: 100%;
@@ -270,12 +276,18 @@ h2{
 .folder-position{
     top: -20px;
 }
+.folder-positions{
+    top: -40px;
+}
 .item-position{
+    top: -65px;
+}
+.item-positions{
     top: -40px;
 }
 .business-items{
     display: inline-block;
-    width: 90%;
+    width: 80%;
     height: 30px;
     padding-top: 10px;
 }
@@ -406,8 +418,25 @@ h2{
 .small-box{
     width: 50%;
     height: 50%;
+    position: relative;
 }
-.small-box > img{
+.box-main{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.box-hidden{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.box-main > img{
     width: 50%;
     height: 50%;
     object-fit: contain;
@@ -416,18 +445,37 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.small-box:hover .box-main{
+    width: 80%;
+    height: 80%;
+    margin-left: 9%;
+    margin-top: 10%;
 }
 .bg-greenish{
     background-color: var(--color-peggiorverdedisempre);
 }
+.bg-heavygreen{
+    background-color: #678662;
+}
 .bg-bordeux{
     background-color: var(--color-bordeux);
+}
+.bg-heavybordeux{
+    background-color: #2d0314;
 }
 .bg-lightblue{
     background-color: var(--color-lightblue);
 }
+.bg-notlightblueanymore{
+    background-color: #006e9b;
+}
 .bg-hotred{
     background-color: var(--color-red1);
+}
+.bg-heavyhotred{
+    background-color: #7e0d0d;
 }
 .bg-red{
     background-color: var(--color-redbello);
@@ -435,11 +483,20 @@ h2{
 .bg-superlightblue{
     background-color: var(--color-whoknows);
 }
+.bg-heavylightblue{
+    background-color: #8ca2b3;
+}
 .bg-blue{
     background-color: var(--color-bluastro);
 }
+.bg-superheavyblue{
+    background-color: #050e34;
+}
 .bg-yellow{
     background-color: var(--color-giallognolo);
+}
+.bg-heavyyellow{
+    background-color: #ccac26;
 }
 .bg-lightgrey{
     background-color: var(--color-white);
@@ -492,11 +549,41 @@ h2{
 }
 .summary-container{
     width: 100%;
-    height: 100px;
+    height: 100%;
     border-top: 1px solid var(--color-borders);
-    padding: 40px 0;
     font-weight: bold;
     cursor: pointer;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+details{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+summary{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    list-style: none;
+    padding-left: 15px;
+}
+details > p{
+    font-weight: 300;
+    font-size: 16px;
+    padding: 20px 15px;
+}
+summary > i{
+    margin-left: 280px;
+}
+.summary-container:active summary > i{
+    rotate: 180deg;
+    color: red;
+}
+.summary-container:hover{
+    background-color: var(--color-submenu-hover);
 }
 .extra{
     border-bottom: 1px solid var(--color-borders);
@@ -556,4 +643,8 @@ footer{
     position: absolute;
     top: 5px;
     left: 110px;
+}
+.btn:hover{
+    background-color: var(--color-btn-hover);
+    color: var(--color-lightblue);
 }
